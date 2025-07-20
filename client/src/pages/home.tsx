@@ -1,12 +1,12 @@
-import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
-import ServicesSection from "@/components/services-section";
-import RoomAttendantTiers from "@/components/room-attendant-tiers";
-import FlexForceSection from "@/components/flexforce-section";
-import WhyChooseSection from "@/components/why-choose-section";
-import QuoteSection from "@/components/quote-section";
-import ContactSection from "@/components/contact-section";
-import Footer from "@/components/footer";
+import Navigation from "@/components/navigation.tsx";
+import HeroSection from "@/components/hero-section.tsx";
+import ServicesSection from "@/components/services-section.tsx";
+import RoomAttendantTiers from "@/components/room-attendant-tiers.tsx";
+import FlexForceSection from "@/components/flexforce-section.tsx";
+import WhyChooseSection from "@/components/why-choose-section.tsx";
+import QuoteSection from "@/components/quote-section.tsx";
+import ContactSection from "@/components/contact-section.tsx";
+import Footer from "@/components/footer.tsx";
 
 export default function Home() {
   return (
