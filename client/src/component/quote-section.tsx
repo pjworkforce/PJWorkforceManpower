@@ -48,25 +48,15 @@ export default function QuoteSection() {
       return response.json();
     },
     onSuccess: () => {
-      toast({
-        title: "Quote Request Submitted!",
-        description: "We'll respond to your inquiry within 2 hours during business hours.",
-      });
+      console.log("Quote Request Submitted!");
+      alert("Quote Request Submitted! We'll respond within 2 hours during business hours.");
       form.reset();
       queryClient.invalidateQueries({ queryKey: ["/api/quote-requests"] });
     },
     onError: (error: any) => {
-      toast({
-        title: "Submission Failed",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
+      console.error("Submission Failed:", error.message);
+      alert("Submission Failed: " + (error.message || "Please try again later."));
     },
-  });
-
-  const onSubmit = (data: InsertQuoteRequest) => {
-    createQuoteMutation.mutate(data);
-  };
 
   const serviceOptions = [
     { value: "housekeeping-room-attendant", label: "Housekeeping Room Attendant" },
