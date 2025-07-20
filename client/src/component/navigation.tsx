@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button.tsx";
+import { Button } from "./ui/button";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
