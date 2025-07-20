@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.tsx";
 
 export default function FlexForceSection() {
   const scrollToSection = (sectionId: string) => {
